@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/bg_gradient">
+
+    <!-- 退出按钮 -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Share"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- 用户名输入框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:hint="Username"
+            android:textColorHint="@color/white_alpha"
+            android:inputType="text"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="16dp"
+            android:textColor="#2196F3"
+            android:background="@drawable/input_field_bg"/>
+    </LinearLayout>
+
+    <!-- 密码输入框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:hint="Password"
+            android:textColorHint="@color/white_alpha"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#2196F3"
+            android:background="@drawable/input_field_bg"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Login"
+        android:layout_marginBottom="12dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_primary"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_secondary"
+        android:elevation="4dp"/>
+</LinearLayout>

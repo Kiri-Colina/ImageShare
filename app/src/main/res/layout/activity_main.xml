@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- 返回按钮 -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:drawable="@drawable/ic_back"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 标题区域 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片分享"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"/>
+
+    <!-- 按钮容器 - 居中显示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="60dp">
+
+        <Button
+            android:id="@+id/btnShareImage"
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:text="分享图片"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/btn_primary"
+            android:layout_marginBottom="16dp"
+            android:elevation="6dp"
+            android:stateListAnimator="@animator/button_click"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+        <Button
+            android:id="@+id/btnReceiveImage"
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:text="接收图片"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginBottom="16dp"
+            android:elevation="6dp"
+            android:stateListAnimator="@animator/button_click"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+    </LinearLayout>
+
+    <!-- 功能区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 用于显示用户列表的 ListView -->
+        <ListView
+            android:id="@+id/lvUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/list_bg"
+            android:divider="@color/gray_light"
+            android:dividerHeight="1dp"
+            android:padding="8dp"/>
+
+        <!-- 用于显示接收的图片 -->
+        <ImageView
+            android:id="@+id/ivReceivedImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_bg"/>
+    </LinearLayout>
+
+    <!-- 接受图片按钮 -->
+    <Button
+        android:id="@+id/btnAcceptImage"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="接受图片"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_primary"
+        android:elevation="4dp"/>
+</LinearLayout>
