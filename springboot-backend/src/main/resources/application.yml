@@ -1,0 +1,34 @@
+server:
+  # 与原 Flask 保持同一端口，Android 客户端无需修改 BASE_URL
+  port: 5000
+
+spring:
+  datasource:
+    # createDatabaseIfNotExist=true：库不存在时自动创建 imageshare 库
+    url: jdbc:mysql://localhost:3306/imageshare?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:123456}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      # 启动时执行 schema.sql（CREATE TABLE IF NOT EXISTS，可重复执行）
+      mode: always
+      schema-locations: classpath:schema.sql
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 25MB
+
+mybatis-plus:
+  configuration:
+    # 下划线列名 <-> 驼峰属性自动映射（如 display_name -> displayName）
+    map-underscore-to-camel-case: true
+    # 打印执行的 SQL，便于调试
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+app:
+  # 图片存储目录（相对于后端启动目录）
+  upload-dir: uploads

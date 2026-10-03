@@ -1,0 +1,13 @@
+com\example\imageshare\server\dto\MarkReceivedRequest.class
+com\example\imageshare\server\service\UserService$RegisterResult.class
+com\example\imageshare\server\dto\PendingImageDto.class
+com\example\imageshare\server\ImageShareServerApplication.class
+com\example\imageshare\server\controller\ApiController.class
+com\example\imageshare\server\mapper\UserMapper.class
+com\example\imageshare\server\entity\SharedImage.class
+com\example\imageshare\server\entity\User.class
+com\example\imageshare\server\controller\ApiController$1.class
+com\example\imageshare\server\service\ImageService.class
+com\example\imageshare\server\mapper\SharedImageMapper.class
+com\example\imageshare\server\service\UserService.class
+com\example\imageshare\server\dto\AuthRequest.class

@@ -1,0 +1,11 @@
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\controller\ApiController.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\dto\AuthRequest.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\dto\MarkReceivedRequest.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\dto\PendingImageDto.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\entity\SharedImage.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\entity\User.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\ImageShareServerApplication.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\mapper\SharedImageMapper.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\mapper\UserMapper.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\service\ImageService.java
+C:\Users\24732\AndroidStudioProjects\imageshare\springboot-backend\src\main\java\com\example\imageshare\server\service\UserService.java
